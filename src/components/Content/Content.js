@@ -8,11 +8,14 @@ class Content extends React.Component {
 
   render() {
     return (
-      <div
-        dangerouslySetInnerHTML={{__html: this.props.content}}
-      />
+      <div className={className}>{content}</div>
     )
   }
 }
 
 export default Content;
+
+export const HTMLContent = ({ content, className}) => (<div
+  className={className}
+  dangerouslySetInnerHTML={{ __html: content}}
+ />);

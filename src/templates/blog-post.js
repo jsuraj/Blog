@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BlogPostTemplate from './blog-post-template';
+import { HTMLContent } from '../components/Content';
 
 
 class BlogPost extends React.Component {
@@ -16,7 +17,8 @@ class BlogPost extends React.Component {
         <BlogPostTemplate
           title={post.frontmatter.title}
           date={post.frontmatter.date}
-          htmlContent={post.html}
+          content={post.html}
+          contentComponent={HTMLContent}
         />
       </div>
     )
