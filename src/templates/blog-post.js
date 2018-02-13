@@ -17,6 +17,7 @@ class BlogPost extends React.Component {
         <BlogPostTemplate
           title={post.frontmatter.title}
           date={post.frontmatter.date}
+          description={post.frontmatter.description}
           content={post.html}
           contentComponent={HTMLContent}
         />
