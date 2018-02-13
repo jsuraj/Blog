@@ -1,13 +1,36 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+import PostList from '../components/PostList';
 
-export default IndexPage
+class IndexPage extends React.Component {
+  render() {
+    const postEdges = this.props.data.allMarkdownRemark.edges;
+    return (
+        <PostList postEdges={postEdges} />
+    )
+  }
+}
+
+export const pageQuery = graphql`
+  query BlogListQuery {
+    allMarkdownRemark(
+      limit: 20
+      sort: { fields: [frontmatter___date], order: DESC}
+    ) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            path
+            title
+            date(formatString:"DD-MM-YYYY")
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default IndexPage;
