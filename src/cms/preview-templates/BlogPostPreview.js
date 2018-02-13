@@ -5,7 +5,6 @@ const BlogPostPreview = ({ entry, widgetFor }) => (
   <BlogPostTemplate
     title={entry.getIn(['data', 'title'])}
     htmlContent={widgetFor('body')}
-    date={widgetFor('date')}
   />
 );
 

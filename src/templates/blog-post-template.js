@@ -9,11 +9,10 @@ class BlogPostTemplate extends React.Component {
   }
 
   render() {
-    const {title, date, htmlContent} = this.props;
+    const {title, htmlContent} = this.props;
     return (
       <div className='blog-post-template'>
         <h2>{title}</h2>
-        <h5>{date}</h5>
         <Content content={htmlContent} />
       </div>
     )
