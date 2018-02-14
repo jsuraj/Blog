@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import 'normalize.css';         //to override user-agent stylesheet
+// import 'normalize.css';         //to override user-agent stylesheet
 import './index.css';
 
 import Header from '../components/Header';

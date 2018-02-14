@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import MediaQuery from 'react-responsive';
+// import MediaQuery from 'react-responsive';
 import './post-preview.css';
 
 class PostPreview extends React.Component {
@@ -22,7 +22,8 @@ class PostPreview extends React.Component {
            <div className='description'>
              <h2 className='card-title'>{postInfo.title}</h2>
              <h6>{postInfo.date}</h6>
-             <MediaQuery minDeviceWidth={576}>
+             <p>{postInfo.excerpt}</p>
+             {/* <MediaQuery minDeviceWidth={576}>
                {(matches) => {
                  if(matches) {
                    return <p>{postInfo.excerpt}</p>
@@ -30,7 +31,7 @@ class PostPreview extends React.Component {
                    return <p></p>
                  }
                }}
-             </MediaQuery>
+             </MediaQuery> */}
            </div>
          </div>
        </Link>
