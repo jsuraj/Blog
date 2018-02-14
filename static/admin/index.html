@@ -25,7 +25,7 @@
         return h('div', {},
           h('h1', {'className': 'preview-title'}, entry.getIn(['data', 'title'])),
           h('h5', {'className': 'preview-description'}, entry.getIn(['data', 'description'])),
-          h('div', {'className': 'preview-body'}, this.props.widgetFor('body'))
+          h('p', {'className': 'preview-body'}, this.props.widgetFor('body'))
         );
       }
     });

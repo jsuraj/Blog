@@ -1,4 +1,4 @@
-.preview-title {
+h1 {
   font-size: 2em;
   margin: 0.67em 0;
   color: hsla(0, 0%, 0%, 0.9);
@@ -6,7 +6,7 @@
   font-weight: 400;
 }
 
-.preview-description {
+h5 {
   margin-top: 2.37rem;
   margin-bottom: 0.79rem;
   color: hsla(0, 0%, 0%, 0.9);
@@ -15,10 +15,9 @@
   font-size: 1rem;
 }
 
-.preview-body {
+p {
   margin-bottom: 1.58rem;
   color: hsla(0,0%,0%,0.73);
   font-family: 'Lora',serif;
   font-weight: 400;
-
 }
