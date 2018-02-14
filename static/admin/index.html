@@ -15,14 +15,17 @@
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
   <!-- Custom preview -->
   <script>
+   CMS.registerPreviewStyle('preview.css');
+  </script>
+  <script>
     var PostPreview = createClass({
       render: function() {
         var entry = this.props.entry;
         var widgetFor = this.props.widgetFor;
         return h('div', {},
-          h('h1', {}, entry.getIn(['data', 'title'])),
-          h('h6', {}, entry.getIn(['data', 'description'])),
-          h('div', {'className': 'text'}, this.props.widgetFor('body'))
+          h('h1', {'className': 'preview-title'}, entry.getIn(['data', 'title'])),
+          h('h5', {'className': 'preview-description'}, entry.getIn(['data', 'description'])),
+          h('div', {'className': 'preview-body'}, this.props.widgetFor('body'))
         );
       }
     });

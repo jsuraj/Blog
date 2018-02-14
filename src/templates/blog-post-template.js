@@ -13,9 +13,9 @@ class BlogPostTemplate extends React.Component {
     const PostContent = contentComponent || Content;
     return (
       <div className='blog-post-template'>
-        <h2>{title}</h2>
+        <h1>{title}</h1>
         <h5>{date || ''}</h5>
-        <p>{description}</p>
+        <h4>{description}</h4>
         <PostContent content={content} />
       </div>
     )
