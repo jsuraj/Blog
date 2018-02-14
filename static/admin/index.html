@@ -13,5 +13,19 @@
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+  <!-- Custom preview -->
+  <script>
+    var PostPreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        var widgetFor = this.props.widgetFor;
+        return h('div', {},
+          h('h1', {}, entry.getIn(['data', 'title'])),
+          h('h6', {}, entry.getIn(['data', 'description'])),
+          h('div', {'className': 'text'}, this.props.widgetFor('body'))
+        );
+      }
+    });
+  </script>
 </body>
 </html>
