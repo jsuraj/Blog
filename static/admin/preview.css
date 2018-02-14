@@ -1,3 +1,10 @@
+p {
+  margin-bottom: 1.58rem;
+  color: hsla(0,0%,0%,0.73);
+  font-family: 'Lora',serif;
+  font-weight: 400;
+}
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -13,11 +20,4 @@ h5 {
   font-family: 'Varela Round',sans-serif;
   font-weight: 400;
   font-size: 1rem;
-}
-
-p {
-  margin-bottom: 1.58rem;
-  color: hsla(0,0%,0%,0.73);
-  font-family: 'Lora',serif;
-  font-weight: 400;
 }
