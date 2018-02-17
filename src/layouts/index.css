@@ -20,6 +20,7 @@
   color: white;
   grid-row: 1/2;
   grid-column: 1/4;
+  z-index: 5;
 }
 
 /*.ad-unit {*/                                          /*TODO: uncommment when ads are active*/

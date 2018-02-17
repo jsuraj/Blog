@@ -11,7 +11,8 @@ class PostList extends React.Component {
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.frontmatter.date,
         path: postEdge.node.frontmatter.path,
-        excerpt: postEdge.node.excerpt
+        excerpt: postEdge.node.excerpt,
+        featuredImage: postEdge.node.frontmatter.featuredImage.childImageSharp.sizes
       });
     });
     return postList;

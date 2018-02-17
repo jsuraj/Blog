@@ -5,6 +5,8 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -12,6 +14,13 @@ module.exports = {
         name: 'pages',
       }
     },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     path: `${__dirname}/static/img`,
+    //     name: 'pages',
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-typography',
       options: {

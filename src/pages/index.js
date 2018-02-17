@@ -26,6 +26,13 @@ export const pageQuery = graphql`
             path
             title
             date(formatString:"DD-MM-YYYY")
+            featuredImage {
+                childImageSharp{
+                    sizes(maxWidth: 630) {
+                        ...GatsbyImageSharpSizes
+                    }
+                }
+            }            
           }
         }
       }
