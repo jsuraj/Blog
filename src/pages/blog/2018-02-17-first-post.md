@@ -12,7 +12,7 @@ Netlify CMS is awesome.
 console.log("Hello netlify");
 ```
 
-Visit [My Blog](jsuraj.netlify.com).
+Visit [My Blog](https://jsuraj.netlify.com).
 
 1. Point one
 2. Point two
