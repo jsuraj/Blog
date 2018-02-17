@@ -24,7 +24,9 @@ class PostPreview extends React.Component {
            </div>
            <div className='description'>
              <h2 className='card-title'>{postInfo.title}</h2>
-             <h6>{postInfo.date}</h6>
+             <h6 className='card-date'>{postInfo.date}</h6>
+             <h4 className='card-author'>{postInfo.author}</h4>
+             <hr />
              <p>{postInfo.excerpt}</p>
              {/* <MediaQuery minDeviceWidth={576}>
                {(matches) => {

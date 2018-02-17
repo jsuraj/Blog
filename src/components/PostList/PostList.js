@@ -10,6 +10,8 @@ class PostList extends React.Component {
       postList.push({
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.frontmatter.date,
+        author: postEdge.node.frontmatter.author,
+        twitterHandle: postEdge.node.frontmatter.twitterHandle,
         path: postEdge.node.frontmatter.path,
         excerpt: postEdge.node.excerpt,
         featuredImage: postEdge.node.frontmatter.featuredImage.childImageSharp.sizes

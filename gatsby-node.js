@@ -25,7 +25,9 @@
              frontmatter {
                templateKey
                path
-               date
+               date(formatString: "MMMM DD, YYYY")
+               author
+               twitterHandle
                title
              }
            }

@@ -17,6 +17,8 @@ class BlogPost extends React.Component {
         <BlogPostTemplate
           title={post.frontmatter.title}
           date={post.frontmatter.date}
+          author={post.frontmatter.author}
+          twitterHandle={post.frontmatter.twitterHandle}
           description={post.frontmatter.description}
           content={post.html}
           contentComponent={HTMLContent}
@@ -35,6 +37,8 @@ export const pageQuery = graphql`
       frontmatter {
         path
         date(formatString: "MMMM DD, YYYY")
+        author
+        twitterHandle
         title
         description
       }

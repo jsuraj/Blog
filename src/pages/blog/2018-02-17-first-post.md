@@ -3,6 +3,8 @@ templateKey: blog-post
 path: first-post
 title: 'First Post '
 date: 2018-02-17T13:17:15.091Z
+author: Suraj Jagtap
+twitterHandle: surajdjagtap
 featuredImage: ../img/lambo.jpg
 description: This is first post from cms.
 ---

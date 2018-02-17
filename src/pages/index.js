@@ -25,14 +25,16 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
-            date(formatString:"DD-MM-YYYY")
+            date(formatString: "MMMM DD, YYYY")
+            author
+            twitterHandle
             featuredImage {
                 childImageSharp{
-                    sizes(maxWidth: 630) {
+                    sizes(maxWidth: 630, maxHeight: 200, cropFocus: CENTER) {
                         ...GatsbyImageSharpSizes
                     }
                 }
-            }            
+            }
           }
         }
       }

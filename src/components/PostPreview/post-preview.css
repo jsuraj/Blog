@@ -24,9 +24,18 @@
 }
 
 .card-title {
-  margin-top: 0rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
+.card-date {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.card-author {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 /*@media (max-width: 576px) {*/
   /*.card-container {*/
     /*grid-template-columns: 1fr;*/
