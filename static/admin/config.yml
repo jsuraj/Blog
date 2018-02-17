@@ -3,7 +3,7 @@ backend:
   branch: development
   accept_roles: #optional - accepts all users if left out
     - admin
-    - editor  
+    - editor
 
 media_folder: static/img
 public_folder: /img
@@ -20,5 +20,6 @@ collections:
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featuredImage", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
