@@ -6,30 +6,30 @@
   <title>Content Manager</title>
 
   <!-- Include the styles for the Netlify CMS UI, after your own styles -->
-  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" /> -->
   <!-- Netlify Identity Widget -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+  <!-- <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script> -->
   <!-- Custom preview -->
   <script>
-   CMS.registerPreviewStyle('preview.css');
+  //  CMS.registerPreviewStyle('preview.css');
   </script>
   <script>
-    var PostPreview = createClass({
-      render: function() {
-        var entry = this.props.entry;
-        var widgetFor = this.props.widgetFor;
-        return h('div', {},
-          h('h1', {'className': 'preview-title'}, entry.getIn(['data', 'title'])),
-          h('h5', {'className': 'preview-description'}, entry.getIn(['data', 'description'])),
-          h('p', {'className': 'preview-body'}, this.props.widgetFor('body'))
-        );
-      }
-    });
-    CMS.registerPreviewTemplate('blog', PostPreview);
+    // var PostPreview = createClass({
+    //   render: function() {
+    //     var entry = this.props.entry;
+    //     var widgetFor = this.props.widgetFor;
+    //     return h('div', {},
+    //       h('h1', {'className': 'preview-title'}, entry.getIn(['data', 'title'])),
+    //       h('h5', {'className': 'preview-description'}, entry.getIn(['data', 'description'])),
+    //       h('p', {'className': 'preview-body'}, this.props.widgetFor('body'))
+    //     );
+    //   }
+    // });
+    // CMS.registerPreviewTemplate('blog', PostPreview);
   </script>
 </body>
 </html>

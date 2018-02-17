@@ -21,13 +21,14 @@ class BlogPostTemplate extends React.Component {
       content,
       contentComponent} = this.props;
     const PostContent = contentComponent || Content;
+    const twitterHandle = twitterHandle || '';
     return (
       <div className='blog-post-template'>
         <h1 className='blog-post-title'>{title}</h1>
         <h5 className='blog-post-date'>{date || ''}</h5>
         <h4 className='blog-post-author'>
           <a target="_blank" href={'https://twitter.com/'+twitterHandle}>
-          {author}
+          {author || ''}
           </a>
         </h4>
         <h4>{description}</h4>
