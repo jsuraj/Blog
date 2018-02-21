@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDisqusComments from 'react-disqus-comments';
+import config from '../../../siteconfig';
 
 class Disqus extends React.Component {
 
@@ -16,10 +17,10 @@ class Disqus extends React.Component {
     const post = postNode.frontmatter;
     return (
       <ReactDisqusComments
-        shortname="jsuraj-disqus-com"
+        shortname={config.disqusShortName}
         identifier={post.title}
         title={post.title}
-        url="http://jsuraj.netlify.com"
+        url={config.siteUrl}
         // category_id="123456"
         onNewComment={this.handleNewComment}/>
     );

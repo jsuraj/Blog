@@ -1,6 +1,9 @@
+const config = require('./siteconfig');
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
+    siteUrl: config.siteUrl
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -44,6 +47,9 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`
+    }
     // {
     //   resolve: 'gatsby-plugin-netlify-cms',
     //   options: {

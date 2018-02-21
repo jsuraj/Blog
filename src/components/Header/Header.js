@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import config from '../../../siteconfig';
 
 const Header = () => (
   <div className='header'>
@@ -14,7 +15,7 @@ const Header = () => (
             backgroundImage: 'none'
           }}
           >
-        TechRathi
+        {config.siteTitle}
         </Link>
       </h2>
     </div>

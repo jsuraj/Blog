@@ -32,8 +32,8 @@ class BlogPostTemplate extends React.Component {
           {author}
           </a>
         </h4>
-        <Img sizes={featuredImage.childImageSharp.sizes} />
         <h4>{description}</h4>
+        <Img sizes={featuredImage.childImageSharp.sizes} />        
         <PostContent content={content} />
       </div>
     )
