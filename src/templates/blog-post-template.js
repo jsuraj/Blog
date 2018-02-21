@@ -1,5 +1,6 @@
 import React from 'react';
 // import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 import './blog-post-template.css';
 
 import Content from '../components/Content';
@@ -17,6 +18,7 @@ class BlogPostTemplate extends React.Component {
       date,
       author,
       twitterHandle,
+      featuredImage,
       description,
       content,
       contentComponent} = this.props;
@@ -30,6 +32,7 @@ class BlogPostTemplate extends React.Component {
           {author}
           </a>
         </h4>
+        <Img sizes={featuredImage.childImageSharp.sizes} />
         <h4>{description}</h4>
         <PostContent content={content} />
       </div>

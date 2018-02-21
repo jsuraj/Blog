@@ -20,6 +20,9 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           id
           excerpt
           frontmatter {

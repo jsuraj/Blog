@@ -1,8 +1,23 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 const Header = () => (
   <div className='header'>
-    Header
+    <div className='header-title'>
+      <h2 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+            textShadow: 'none',
+            backgroundImage: 'none'
+          }}
+          >
+        TechRathi
+        </Link>
+      </h2>
+    </div>
   </div>
 );
 

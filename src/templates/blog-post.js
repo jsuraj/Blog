@@ -2,6 +2,7 @@ import React from 'react';
 
 import BlogPostTemplate from './blog-post-template';
 import { HTMLContent } from '../components/Content';
+import Disqus from '../components/Disqus';
 
 
 class BlogPost extends React.Component {
@@ -19,10 +20,12 @@ class BlogPost extends React.Component {
           date={post.frontmatter.date}
           author={post.frontmatter.author}
           twitterHandle={post.frontmatter.twitterHandle}
+          featuredImage={post.frontmatter.featuredImage}
           description={post.frontmatter.description}
           content={post.html}
           contentComponent={HTMLContent}
         />
+        <Disqus postNode={post}/>
       </div>
     )
   }
@@ -41,6 +44,16 @@ export const pageQuery = graphql`
         twitterHandle
         title
         description
+        featuredImage {
+            childImageSharp{
+                sizes(maxWidth: 630, maxHeight: 200, cropFocus: CENTER) {
+                    ...GatsbyImageSharpSizes
+                }
+            }
+        }
+      }
+      fields {
+        slug
       }
     }
   }
