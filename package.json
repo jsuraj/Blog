@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "author": "Suraj Jagtap",
   "dependencies": {
+    "dotenv": "^5.0.0",
     "gatsby": "^1.9.158",
     "gatsby-image": "^1.0.37",
     "gatsby-link": "^1.6.34",
+    "gatsby-plugin-google-analytics": "^1.0.19",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sharp": "^1.6.27",
     "gatsby-plugin-sitemap": "^1.2.13",

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import config from '../../siteconfig';
 
 // import 'normalize.css';         //to override user-agent stylesheet
 import './index.css';
@@ -15,7 +16,7 @@ class TemplateWrapper extends React.Component<Props> {
     return (
       <div className='my-blog'>
         <Helmet
-          title='My Blog'
+          title={config.siteTitle}
           meta={[
             { name: 'description', content: 'Sample' },               //TODO: Change meta
             { name: 'keywords', content: 'sample, something' },

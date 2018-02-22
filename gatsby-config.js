@@ -1,4 +1,7 @@
 const config = require('./siteconfig');
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 
 module.exports = {
   siteMetadata: {
@@ -49,7 +52,15 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sitemap`
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_ID,
+        head: false,
+        anonymize: true,
+      },
+    },
     // {
     //   resolve: 'gatsby-plugin-netlify-cms',
     //   options: {
