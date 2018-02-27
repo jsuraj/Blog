@@ -31,6 +31,9 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             author
             twitterHandle
+            title
+            description
+            keywords
             featuredImage {
                 childImageSharp{
                     sizes(maxWidth: 630, maxHeight: 200, cropFocus: CENTER) {
