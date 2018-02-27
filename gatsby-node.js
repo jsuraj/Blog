@@ -33,6 +33,8 @@
                author
                twitterHandle
                title
+               description
+               keywords
              }
            }
          }

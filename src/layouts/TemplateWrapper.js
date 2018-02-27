@@ -15,13 +15,11 @@ class TemplateWrapper extends React.Component<Props> {
     const { children } = this.props;
     return (
       <div className='my-blog'>
-        <Helmet
-          title={config.siteTitle}
-          meta={[
-            { name: 'description', content: 'Sample' },               //TODO: Change meta
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        />
+        <Helmet>
+          <title>{config.siteTitle}</title>
+          <meta name='description' content={config.siteDescription} />
+          <meta name='keywords' content={config.keywords} />
+        </Helmet>
         <Header />
         <div className='content'>
           {children()}

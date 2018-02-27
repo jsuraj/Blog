@@ -24,4 +24,5 @@ collections:
       - {label: "Twitter Handle", name: "twitterHandle", widget: "string", default: "surajdjagtap"}
       - {label: "Featured Image", name: "featuredImage", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Keywords", name: "keywords", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}

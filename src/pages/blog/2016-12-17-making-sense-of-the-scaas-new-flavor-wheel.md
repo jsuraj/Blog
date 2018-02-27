@@ -7,6 +7,7 @@ author: Suraj Jagtap
 twitterHandle: surajdjagtap
 featuredImage: '../img/boat.jpg'
 description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+keywords: SEO, Ninja
 ---
 
 
