@@ -5,7 +5,7 @@ title: Three more
 date: 2018-03-01T13:59:53.669Z
 author: Suraj Jagtap
 twitterHandle: surajdjagtap
-featuredImage: ../img/elemento.jpg
+featuredImage: ../img/lambo.jpg
 description: 'Third sample article '
 keywords: 'three, more'
 ---
