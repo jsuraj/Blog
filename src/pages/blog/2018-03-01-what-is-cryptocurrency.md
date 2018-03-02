@@ -18,14 +18,15 @@ Cryptocurrencies are different from traditional currencies in various ways.
 * They do not have a physical form.
 * The supply of cryptocurrencies is not controlled by a central authority.
 * Cryptocurrencies are not backed by a physical commodity.Like traditional currencies are backed by gold.
-  ### Traditional currency:
-  Historically goods and services were exchanged directly with goods or services. This system was called as the barter system.
+
+### Traditional currency:
+Historically goods and services were exchanged directly with goods or services. This system was called as the barter system.
   Currency was introduced to make it easier to trade.
   Cryptocurrency was a big hit due to its advantages over traditional currency. Traditionally currency is issued by a centralized agency. Its value and supply are controlled by a central authority. Sending currency always involves a third party like visa, Mastercard etc. Third party systems facilitate the transaction of money at the cost of security risks.The transfer of currency is also restricted by borders, jurisdiction etc. This increases the time required for currency exchange.
-  ### Cryptocurrency:
-  The first ever well-known cryptocurrency is Bitcoin. Bitcoin was launched to overcome the problems caused by traditional currency. Satoshi Nakamoto, the mysterious inventor of bitcoin first released bitcoin as a peer-to-peer electronic cash system which is completely decentralized with no server or central authority.
-  ### Basic working principle of cryptocurrency:
-  When Alice has to send some amount to Bob.
+### Cryptocurrency:
+The first ever well-known cryptocurrency is Bitcoin. Bitcoin was launched to overcome the problems caused by traditional currency. Satoshi Nakamoto, the mysterious inventor of bitcoin first released bitcoin as a peer-to-peer electronic cash system which is completely decentralized with no server or central authority.
+### Basic working principle of cryptocurrency:
+When Alice has to send some amount to Bob.
 
 1. Alice requests for a transaction.
 2. The transaction is signed by Alice's private key.
@@ -35,7 +36,8 @@ Cryptocurrencies are different from traditional currencies in various ways.
 6. The ledger is added to the existing blockchain as a block.
 7. The transaction is completed.
    As a blockchain containing transactions is maintained on a distributed network of nodes it is difficult to forge a transaction.
-   ### Applications of cryptocurrency:
-8. **Buy goods**: Cryptocurrency can be used as a mode of payment to buy goods and services.
-9. **Invest**: You can invest into and trade cryptocurrency jus like stocks.
-10. **Mine currency**: Cryptocurrency can be mined ie, you can employ computers to solved cryptographic puzzles and earn cryptocurrency.
+
+### Applications of cryptocurrency:
+1. **Buy goods**: Cryptocurrency can be used as a mode of payment to buy goods and services.
+2. **Invest**: You can invest into and trade cryptocurrency jus like stocks.
+3. **Mine currency**: Cryptocurrency can be mined ie, you can employ computers to solved cryptographic puzzles and earn cryptocurrency.
