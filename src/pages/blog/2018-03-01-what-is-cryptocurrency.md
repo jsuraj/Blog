@@ -35,7 +35,8 @@ When Alice has to send some amount to Bob.
 5. The verified transaction is added to a public ledger along with other transactions.
 6. The ledger is added to the existing blockchain as a block.
 7. The transaction is completed.
-   As a blockchain containing transactions is maintained on a distributed network of nodes it is difficult to forge a transaction.
+
+ As a blockchain containing transactions is maintained on a distributed network of nodes it is difficult to forge a transaction.
 
 ### Applications of cryptocurrency:
 1. **Buy goods**: Cryptocurrency can be used as a mode of payment to buy goods and services.
