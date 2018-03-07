@@ -1,8 +1,20 @@
 import Typography from "typography";
-import lincolnTheme from 'typography-theme-lincoln';
+import deYoungTheme from 'typography-theme-de-young';
 
-delete lincolnTheme.googleFonts;
+delete deYoungTheme.googleFonts;
 
-const typography = new Typography(lincolnTheme);
+deYoungTheme.headerColor = 'hsla(0,0%,0%,1)';
+deYoungTheme.bodyColor = 'hsla(0,0%,0%,0.8)';
+
+deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
+  'h1,h2,h3,h4,h5,h6': {
+    color: 'hsla(0,0%,0%,1)',
+  },
+  'a': {
+    textDecoration: 'none'
+  }
+})
+
+const typography = new Typography(deYoungTheme);
 
 export default typography;
