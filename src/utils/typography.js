@@ -1,5 +1,5 @@
 import Typography from "typography";
-import lincolnTheme from 'typography-theme-lincoln'
+import lincolnTheme from 'typography-theme-lincoln';
 
 delete lincolnTheme.googleFonts;
 
