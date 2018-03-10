@@ -22,6 +22,7 @@ collections:
       - {label: "Author", name: "author", widget: "string", default: "Suraj Jagtap"}
       - {label: "Twitter Handle", name: "twitterHandle", widget: "string", default: "surajdjagtap"}
       - {label: "Featured Image", name: "featuredImage", widget: "string"}
+      - {label: "Image link", name: "imageLink" widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Keywords", name: "keywords", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
