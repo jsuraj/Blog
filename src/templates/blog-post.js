@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import config from '../../siteconfig';
 
 import BlogPostTemplate from './blog-post-template';
 import { HTMLContent } from '../components/Content';
@@ -20,6 +21,10 @@ class BlogPost extends React.Component {
           <title>{post.frontmatter.title}</title>
           <meta name='description' content={post.frontmatter.description} />
           <meta name='keywords' content={post.frontmatter.keywords} />
+          <meta property="og:title" content={post.frontmatter.title} />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content={config.siteUrl+'/'+post.frontmatter.path} />
+          <meta property="og:image" content={post.frontmatter.imageLink} />          
         </Helmet>
         <BlogPostTemplate
           title={post.frontmatter.title}
@@ -51,6 +56,7 @@ export const pageQuery = graphql`
         title
         description
         keywords
+        imageLink
         featuredImage {
             childImageSharp{
                 sizes(maxWidth: 630, cropFocus: CENTER) {
