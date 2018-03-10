@@ -24,7 +24,13 @@ class BlogPost extends React.Component {
           <meta property="og:title" content={post.frontmatter.title} />
           <meta property="og:type" content="article" />
           <meta property="og:url" content={config.siteUrl+'/'+post.frontmatter.path} />
-          <meta property="og:image" content={post.frontmatter.imageLink} />          
+          <meta property="og:image" content={post.frontmatter.thumbnailLink} />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content={'@'+config.twitterHandle} />
+          <meta name="twitter:title" content={post.frontmatter.title} />
+          <meta name="twitter:description" content={post.frontmatter.description} />
+          <meta name="twitter:creator" content={'@'+config.twitterHandle} />
+          <meta name="twitter:image" content={post.frontmatter.thumbnailLink} />                    
         </Helmet>
         <BlogPostTemplate
           title={post.frontmatter.title}
@@ -56,7 +62,7 @@ export const pageQuery = graphql`
         title
         description
         keywords
-        imageLink
+        thumbnailLink
         featuredImage {
             childImageSharp{
                 sizes(maxWidth: 630, cropFocus: CENTER) {

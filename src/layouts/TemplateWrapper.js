@@ -23,7 +23,13 @@ class TemplateWrapper extends React.Component<Props> {
           <meta property="og:title" content={config.siteTitle} />
           <meta property="og:type" content="article" />
           <meta property="og:url" content={config.siteUrl} />
-          <meta property="og:image" content="https://imgur.com/bxVuRzM" />
+          <meta property="og:image" content={config.thumbnail} />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content={'@'+config.twitterHandle} />
+          <meta name="twitter:title" content={config.siteTitle} />
+          <meta name="twitter:description" content={config.siteDescription} />
+          <meta name="twitter:creator" content={'@'+config.twitterHandle} />
+          <meta name="twitter:image" content={config.thumbnail} />
         </Helmet>
         <Header />
         <div className='content'>
