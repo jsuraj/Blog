@@ -6,6 +6,7 @@ date: 2018-02-28T17:47:48.082Z
 author: Suraj Jagtap
 twitterHandle: surajdjagtap
 featuredImage: ../img/what-is-crypto.jpg
+thumbnailLink: 'https://i.imgur.com/bxVuRzMm.jpg'
 description: >-
   Crypto was at the center of attention and innovation in the past year.In this
   article, we will take a brief overview of cryptocurrency.
