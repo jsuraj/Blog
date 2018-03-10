@@ -22,7 +22,7 @@
     "react-helmet": "^5.2.0",
     "react-responsive": "^4.0.4",
     "typography": "^0.16.6",
-    "typography-theme-lincoln": "^0.15.11"
+    "typography-theme-de-young": "^0.16.9"
   },
   "main": "n/a",
   "scripts": {

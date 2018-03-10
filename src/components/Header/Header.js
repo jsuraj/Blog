@@ -12,7 +12,8 @@ const Header = () => (
             color: 'white',
             textDecoration: 'none',
             textShadow: 'none',
-            backgroundImage: 'none'
+            backgroundImage: 'none',
+            boxShadow: 'none'
           }}
           >
         {config.siteTitle}
