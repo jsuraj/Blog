@@ -20,6 +20,10 @@ class TemplateWrapper extends React.Component<Props> {
           <meta name='description' content={config.siteDescription} />
           <meta name='keywords' content={config.keywords} />
           <meta name="google-site-verification" content="2_JoGznVncScrs9gCnsMQTrb68KdDyKjmEYMq_eh0cA" />
+          <meta property="og:title" content={config.siteTitle} />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content={config.siteUrl} />
+          <meta property="og:image" content="https://imgur.com/bxVuRzM" />
         </Helmet>
         <Header />
         <div className='content'>

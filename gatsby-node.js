@@ -32,6 +32,7 @@
                date(formatString: "MMMM DD, YYYY")
                author
                twitterHandle
+               imageLink
                title
                description
                keywords

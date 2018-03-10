@@ -34,6 +34,7 @@ export const pageQuery = graphql`
             title
             description
             keywords
+            imageLink
             featuredImage {
                 childImageSharp{
                     sizes(maxWidth: 630, maxHeight: 200, cropFocus: CENTER) {

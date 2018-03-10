@@ -5,7 +5,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: config.siteTitle,
     siteUrl: config.siteUrl
   },
   plugins: [
